@@ -14,7 +14,7 @@ class ContactController {
 
     def add() {
 
-        def dbIndex = params.int('id') ?: ((int) (Math.random() * 3))
+        def dbIndex = params.int('id')
         def contact = contactService.build()
 
         if (dbIndex == 0) { Contact.withTransaction             { contact.save()            } }
