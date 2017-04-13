@@ -105,12 +105,25 @@ dataSource:
 
 environments:
     development:
-        dataSource:
-            dbCreate: create
-            driverClassName: org.mariadb.jdbc.Driver
-            username: root
-            password: root
-            url: jdbc:mariadb://localhost:3306/grails-multids-1?serverTimezone=UTC
+        dataSources:
+            dataSource:
+                dbCreate: update
+                driverClassName: org.mariadb.jdbc.Driver
+                username: root
+                password: root
+                url: jdbc:mariadb://localhost:3306/grails-multids-1?serverTimezone=UTC
+            serverdb:
+                dbCreate: update
+                driverClassName: org.mariadb.jdbc.Driver
+                username: root
+                password: root
+                url: jdbc:mariadb://localhost:3306/grails-multids-2?serverTimezone=UTC
+            userdb:
+                dbCreate: update
+                driverClassName: org.mariadb.jdbc.Driver
+                username: root
+                password: root
+                url: jdbc:mariadb://localhost:3306/grails-multids-3?serverTimezone=UTC
 
     test:
         dataSource:
