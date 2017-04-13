@@ -48,6 +48,8 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 
     runtime 'org.mariadb.jdbc:mariadb-java-client:1.5.9'
+    runtime 'org.grails:grails-datastore-rest-client'
+
 
 }
 
