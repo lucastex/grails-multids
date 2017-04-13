@@ -5,9 +5,9 @@
             <tr>
                 <thead>
                     <tr>
-                        <th>dataSource</th>
-                        <th>serverdb</th>
-                        <th>userdb</th>
+                        <th>dataSource <g:link controller="contact" action="add" id="0">(add)</g:link></th>
+                        <th>serverdb <g:link controller="contact" action="add" id="1">(add)</g:link></th>
+                        <th>userdb <g:link controller="contact" action="add" id="2">(add)</g:link></th>
                     </tr>
                 </thead>
                 <tbody>
