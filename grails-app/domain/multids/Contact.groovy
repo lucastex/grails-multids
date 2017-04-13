@@ -4,6 +4,7 @@ class Contact {
 
     String name
 
-    static constraints = {
+    static mapping = {
+        datasource 'ALL'
     }
 }
